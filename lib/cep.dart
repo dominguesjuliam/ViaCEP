@@ -14,4 +14,10 @@ class Cep {
     required this.localidade,
     required this.uf,
   });
+
+  static List<Cep> cepList = [];
+
+  static void addCep(Cep cep) {
+    cepList.add(cep);
+  }
 }
